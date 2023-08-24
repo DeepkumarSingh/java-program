@@ -1,0 +1,27 @@
+# JAVA PROGRAM TO ADD TWO NUMBERS USING METHODS .
+
+import java.util.*;
+
+class Algebra {
+    int add(int a,int b){
+        int ans=a+b;
+        return ans;
+    }
+
+}
+public class main{
+    public static void main(String[] args) {
+        Algebra  obj=new Algebra();
+        System.out.println("Enter the numbers :");
+        Scanner sc = new Scanner(System.in);
+        int x=sc.nextInt();
+        int y=sc.nextInt();
+        
+        System.out.print("Sum of two given numbers is : ");
+        int ans=obj.add(x,y);
+        System.out.println(ans);
+        
+    }
+}
+
+# 
