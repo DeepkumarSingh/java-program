@@ -110,4 +110,76 @@ public class Main{
     }
 }
 
-# 
+# Write a Java method to compute the average of three numbers
+
+import java.util.*;
+
+class Average{
+     int avg(int a,int b,int c){
+        int ans=(a+b+c)/3;
+        return ans;
+    }
+
+}
+public class main{
+    public static void main(String[] args) {
+        Average  obj=new Average();
+        Scanner sc =new Scanner(System.in);
+        System.out.println("Enter the Three numbers :");
+        int x=sc.nextInt();
+        int y=sc.nextInt();
+        int z=sc.nextInt();
+
+        System.out.print("The average of the given three  numbers is: ");
+        int ans=obj.avg(x,y,z);
+       
+        System.out.println(ans);
+
+    }
+}
+
+OUTPUT:
+Enter the Three numbers :
+1
+2
+3
+The average of the given three  numbers is: 2
+
+# Write a Java method to count all vowels in a string
+
+import java.util.*;
+class CountVowels{
+    int vow(String s){
+int count = 0;
+for(int i = 0; i < s.length(); i++){
+char ch = s.charAt(i);
+if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch =='A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U') {
+count++;
+}
+}
+return count;
+}
+}
+
+public class Main1 {
+    public static void main(String[] args) {
+        CountVowels ob = new CountVowels();
+        Scanner  sc = new Scanner(System.in);
+        System.out.println("Enter the word :");
+        String s = sc.next();
+        int ans=ob.vow(s);
+        System.out.println(ans);
+        
+    }
+}
+OUTPUT:
+Enter the word :
+DEEP
+2
+
+# Write a Java method to display the middle character of a string.(Easy)
+
+Note: a) If the length of the string is even there will be two middle characters.
+
+ b) If the length of the string is odd there will be one middle character.
+
