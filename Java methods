@@ -23,5 +23,91 @@ public class main{
         
     }
 }
+OUTPUT:
+Enter the numbers :
+2
+3
+Sum of two given numbers is : 5
+
+
+# JAVA PROGRAM FOR CALLING CONSTRUCTORS 
+
+import java.util.*;
+
+class Algebra {
+    
+    Algebra(){
+         System.out.println("Constructors of Algebra class called ");
+    }
+    int add(int a,int b){
+        int ans=a+b;
+        return ans;
+    }
+
+}
+public class Main{
+    public static void main(String[] args) {
+        Algebra  obj=new Algebra();
+        System.out.println("Enter the numbers :");
+        Scanner sc = new Scanner(System.in);
+        int x=sc.nextInt();
+        int y=sc.nextInt();
+        
+        System.out.print("Sum of two given numbers is : ");
+        int ans=obj.add(x,y);
+        System.out.println(ans);
+        
+    }
+}
+OUTPUT:
+Constructors of Algebra class called 
+Enter the numbers :
+2
+3
+Sum of two given numbers is : 5
+
+# HOW TO USE PARAMETERIZED CONSTRUCTOR IN JAVA 
+
+import java.util.*;
+
+class Algebra {
+    int a;
+    int b;
+    
+    Algebra(int x, int y){
+         System.out.println("Constructors of Algebra class called ");
+         a = x;
+         b = y;
+    }
+    int add(){
+        int ans=a+b;
+        return ans;
+    }
+    int sub(){
+        return a-b;
+    }
+    int mul(){
+        return a*b;
+        
+    }
+    int div(){
+        return a/b;
+    }
+
+}
+public class Main{
+    public static void main(String[] args) {
+        Algebra  obj=new Algebra(9,6);   //<-- IN THIS WAY CAN PASS OUR PARAMETER (i.e parameterized constructors )
+        
+        Scanner sc = new Scanner(System.in);
+        int ans=obj.add();
+        System.out.println(ans);
+        System.out.println(obj.sub());
+        System.out.println(obj.mul());
+        System.out.println(obj.div());
+        
+        
+    }
+}
 
 # 
