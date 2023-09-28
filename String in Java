@@ -74,3 +74,92 @@ public class Comparestrings {
 OUTPUT:
 Strings are Equal
 
+# Use of substring() in java for printing the sub part of the Strings 
+
+MEHTOD-1 
+public class substrings {
+    public static void main(String[] args) {
+        String sentence ="My name is Deep";
+       
+        String name=sentence.substring(11,15);
+        System.out.println(name);
+    }    
+}
+OUTPUT:
+Deep
+
+METHOD-2 (By using length() function instead of ending index)
+
+public class substrings {
+    public static void main(String[] args) {
+        String sentence ="My name is Deep";
+       
+        String name=sentence.substring(11,sentence.length());
+        System.out.println(name);
+    }    
+}
+OUTPUT:
+Deep
+
+METHOD-3(without passing the ending index. In java bydefault it will goes upto the ending index )
+
+public class substrings {
+    public static void main(String[] args) {
+        String sentence ="My name is Deep";
+       
+        String name=sentence.substring(11);
+        System.out.println(name);
+    }    
+}
+OUTPUT:
+Deep
+
+# Input a string from the user. Create a new string called ‘result’ in which you will replace the letter ‘e’ in the original string with letter ‘i’. 
+Example : 
+original = “eabcdef’ ; result = “iabcdif”
+Original = “xyz” ; result = “xyz”
+
+import java.util.*;
+public class q1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        System.out.println("Enter the String :");
+        String Original=sc.next();
+        String Result="";
+        for(int i=0;i<Original.length();i++){
+            if(Original.charAt(i)=='e'|| Original.charAt(i)=='E'){
+                   Result+='i';
+            }
+            else{
+                Result+=Original.charAt(i);
+            }
+        }
+        System.out.println(Result);
+    }
+}
+OUTPUT:
+Enter the String :
+DeEp
+Diip
+
+# Input an username from the user. You have to create a email id  with the help of username by adding @gmail.com after the username and  Display this  email id  to the user.
+Example : 
+username = “shivamkumar123” 
+email = “shivamkumar123@gmail.com”
+
+
+import java.util.*;
+public class q2{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        System.out.println("Enter the Username :");
+        String username =sc.next();
+        String str="@gmail.com";
+        String email_id=username+str;
+        System.out.println("your Email id is :" +email_id);
+    }
+}
+OUTPUT:
+Enter the Username :
+shivamkumar123
+
