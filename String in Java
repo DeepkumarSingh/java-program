@@ -1,0 +1,76 @@
+# Concatenation in Java (i.e Adding two or more Strings in Java is known as Concatenation)
+import java.util.*;
+public class concatenation {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String firstName="Deep";
+        String lastName="Singh";
+        String fullName =firstName +" "+lastName;
+        System.out.println(fullName);  
+    }
+}
+OUTPUT:
+Deep Singh
+
+# Use of length method /function to calculate length of the given Strings .. 
+import java.util.*;
+public class concatenation {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String firstName="Deep";
+        String lastName="Singh";
+        String fullName =firstName +" "+lastName;
+        System.out.println(fullName.length());  
+    }
+}
+OUTPUT:
+10
+
+# Use of charAt() function in Java to print the string by its indexes .
+import java.util.*;
+public class concatenation {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String firstName="Deep";
+        String lastName="Singh";
+        String fullName =firstName +" "+lastName;
+        System.out.println(fullName.length());  
+        for(int i=0;i<fullName.length();i++){
+            System.out.println(fullName.charAt(i));
+        }
+    
+    
+    }
+
+
+}
+OUTPUT:
+10
+D
+e
+e
+p
+
+S
+i
+n
+g
+h
+
+# How to use compareTo() function in java for comparing two strings ...
+
+public class Comparestrings {
+    public static void main(String[] args) {
+        String name1="Deep";
+        String name2="Deep";
+        if(name1.compareTo(name2)==0){
+            System.out.println("Strings are Equal");
+        }
+        else{
+            System.out.println("Strings are not Equal ");
+        }
+    }    
+}
+OUTPUT:
+Strings are Equal
+
