@@ -1,0 +1,82 @@
+# How to use StringBuilder class in Java and their operation (i.e set , insert, delete , get, CharAt()... etc )
+
+public class Stringbuilder {
+    public static void main(String[] args) {
+        StringBuilder sb = new StringBuilder("Mahadev");
+        System.out.println(sb);
+
+        // how to get character at particular index
+        System.out.println(sb.charAt(0));
+
+        // how to set a character inside the string
+        sb.setCharAt(0, 'm');
+        System.out.println(sb);
+
+        // how to add a new character in the given string
+        sb.insert(0, 'J');
+        System.out.println(sb);
+
+        sb.insert(1, 'a');
+        System.out.println(sb);
+
+        sb.insert(2, 'i');
+        System.out.println(sb);
+
+        sb.insert(3, ' ');
+        System.out.println(sb);
+
+        sb.insert(0, 'M');
+        System.out.println(sb);
+        // how to delete a character at particular index
+        sb.delete(0, 1);
+        System.out.println(sb);
+
+        // how to append a new character in the string
+        sb.append("a");
+        System.out.println(sb);
+
+        sb.append(" ");
+        System.out.println(sb);
+
+        sb.append("k");
+        System.out.println(sb);
+
+        sb.append("i");
+        System.out.println(sb);
+
+        sb.append(" ");
+        System.out.println(sb);
+
+        sb.append("J");
+        System.out.println(sb);
+
+        sb.append("a");
+        System.out.println(sb);
+
+        sb.append("i");
+        System.out.println(sb);
+
+    }
+}
+
+OUTPUT:
+Mahadev
+M
+mahadev
+Jmahadev
+Jamahadev
+Jaimahadev
+Jai mahadev
+MJai mahadev
+Jai mahadev
+Jai mahadeva
+Jai mahadeva 
+Jai mahadeva k
+Jai mahadeva ki
+Jai mahadeva ki 
+Jai mahadeva ki J
+Jai mahadeva ki Ja
+Jai mahadeva ki Jai
+
+
+# 
