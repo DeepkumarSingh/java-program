@@ -101,4 +101,21 @@ public class reversestring {
 OUTPUT:
 After reversing the string becomes :DNAHKRAHJ
 
+# HOW TO TAKE INPUT BY THE USER IN StringBuilder CLASS IN JAVA 
+import java.util.Scanner;  
+  
+public class Main {  
+    public static void main(String[] args) {  
+        StringBuilder sb = new StringBuilder("");  
+          
+        System.out.print("Enter your string value: ");  
+        Scanner sc = new Scanner(System.in);  
+        sb.append(sc.nextLine());  
+        System.out.print(sb);  
+    }  
+}  
+OUTPUT:
+Enter your string value: 
+Deep kumar is a student
+
 # 
