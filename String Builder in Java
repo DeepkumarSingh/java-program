@@ -79,4 +79,26 @@ Jai mahadeva ki Ja
 Jai mahadeva ki Jai
 
 
+# REVERSE A STRING USING  StringBuilder class in Java 
+public class reversestring {
+    public static void main(String[] args) {
+        StringBuilder sb = new StringBuilder("JHARKHAND");
+        for (int i = 0; i < sb.length() / 2; i++) {
+            int front = i;
+            int back = sb.length() - i - 1;
+
+            char frontchar = sb.charAt(front);
+            char backchar = sb.charAt(back);
+
+            sb.setCharAt(front, backchar);
+            sb.setCharAt(back, frontchar);
+
+        }
+        System.out.print("After reversing the string becomes :");
+        System.out.println(sb);
+    }
+}
+OUTPUT:
+After reversing the string becomes :DNAHKRAHJ
+
 # 
