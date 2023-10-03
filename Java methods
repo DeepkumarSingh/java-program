@@ -216,5 +216,58 @@ OUTPUT:
 2nd Complex number is :10 + i5
 The addition of two given Complex number is : 14 + i10
 
-#
+# java program to Calculate the Sum of two time interval in hours,mimnutes, and seconds ..
+class Time{
+    int hrs,min,sec;
+    public Time (int h,int m,int s){
+        this.hrs=h;
+        this.min=m;
+        this.sec=s;
+    }
+    public void showTime()
+    {
+        System.out.println(this.hrs+ ":"+this.min+":"+this.sec);
+    }
+    public static Time add(Time t1,Time t2)
+    {
+        Time result= new Time (0,0,0);
+        result.hrs=t1.hrs+t2.hrs;
+        result.min=t1.min+t2.min;
+        result.sec=t1.sec+t2.sec;
+
+        if(result.min>60){
+            result.hrs++;
+            result.min-=60;
+        }
+        if(result.sec>60)
+        {
+            result.sec-=60;
+            result.min++;
+            //result.sec-=60;
+        }
+
+        return result;
+    }
+    public static void main(String[] args) {
+        Time t1 = new Time(3,35,50);
+        Time t2= new Time(2,40,34);
+        
+        System.out.println("The Time t1 is :");
+        t1.showTime();
+        System.out.println("The Time t2 is :");
+        t2.showTime();
+
+        Time result = add(t1,t2);
+        System.out.println("The addition of two given time interval is :");
+        result.showTime();
+    }
+
+}
+OUTPUT:
+The Time t1 is :
+3:35:50
+The Time t2 is :
+2:40:34
+The addition of two given time interval is :
+6:16:24
 
