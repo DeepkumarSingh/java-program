@@ -177,4 +177,44 @@ Enter the word :
 DEEP
 2
 
+# Addition of two complex number in Java 
+
+class Complex{
+    int real,img;
+    public Complex(int r,int i)
+    {
+        this.real=r;
+        this.img=i;
+
+    }
+    public void showComplex()
+    {
+        System.out.println(this.real+" + i"+this.img);
+    }
+    public static Complex add(Complex c1, Complex c2)
+    {
+        Complex result = new Complex(0, 0);
+        result.real=c1.real+c2.real;
+        result.img=c1.img+c2.img;
+        return result;
+    }
+    public static void main(String[] args) {
+        Complex c1= new Complex(4,5);
+        Complex c2= new Complex(10,5);
+        System.out.print("1st Complex number is :");
+        c1.showComplex();
+        System.out.print("2nd Complex number is :");
+        c2.showComplex();
+
+        Complex result = add(c1,c2);
+        System.out.print("The addition of two given Complex number is : ");
+        result.showComplex();
+    }
+}
+OUTPUT:
+1st Complex number is :4 + i5
+2nd Complex number is :10 + i5
+The addition of two given Complex number is : 14 + i10
+
+#
 
