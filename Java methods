@@ -177,9 +177,4 @@ Enter the word :
 DEEP
 2
 
-# Write a Java method to display the middle character of a string.(Easy)
-
-Note: a) If the length of the string is even there will be two middle characters.
-
- b) If the length of the string is odd there will be one middle character.
 
