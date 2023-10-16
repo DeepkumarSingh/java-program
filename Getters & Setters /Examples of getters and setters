@@ -28,3 +28,45 @@ public class Getters_setters {
         System.out.println(obj.getId());
     }
 }
+
+// exmaples - Create a class Cylinder and use getters and setters to set its radius and height
+
+class Cylinder {
+    private int radius;
+    private int height;
+
+    public void setRadius(int r) {
+        radius = r;
+    }
+
+    public int getRadius() {
+        return radius;
+    }
+
+    public void setHeight(int h) {
+        height = h;
+    }
+
+    public int getHeight() {
+        return height;
+
+    }
+
+}
+
+public class Q {
+    public static void main(String[] args) {
+        Cylinder obj = new Cylinder();
+
+        obj.setRadius(50);
+        System.out.print("The Radius of the Cylinder is : ");
+        System.out.println(obj.getRadius());
+
+        obj.setHeight(100);
+        System.out.print("The Radius of the Cylinder is : ");
+        System.out.println(obj.getHeight());
+    }
+}
+OUTPUT:
+The Radius of the Cylinder is : 50
+The Radius of the Cylinder is : 100
