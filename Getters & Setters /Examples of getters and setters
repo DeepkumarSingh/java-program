@@ -1,0 +1,30 @@
+class MyEmployee {
+    private int id;
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String n) {
+        name = n;
+    }
+
+    public void setId(int i) {
+        id = i;
+    }
+
+    public int getId() {
+        return id;
+    }
+}
+
+public class Getters_setters {
+    public static void main(String[] args) {
+        MyEmployee obj = new MyEmployee();
+        obj.setName("Elon Musk");
+        System.out.println(obj.getName());
+        obj.setId(123);
+        System.out.println(obj.getId());
+    }
+}
