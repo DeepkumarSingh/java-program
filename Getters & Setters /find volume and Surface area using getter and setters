@@ -22,7 +22,7 @@ class Cylinder {
     }
 
     public double surfaceArea() {
-        return 2 * 3.14 * radius * height + 2 * 3.14 * radius * radius;
+        return 2 * 3.14 * radius * height + 2 * 3.14 * radius * radius;          // <-- here we can use Math.PI(instead of 3.14)to get accurate answers 
     }
     public double Volume(){
         return 3.142*radius*radius*height;
